@@ -2,7 +2,13 @@
 
 int main()
 {
+    //Comment
+
+    /*
+    long comment
+    */
+
     std::cout << "Hello World" << std::endl;
-    std::cout << "Mehh" << '\n';
+    std::cout << "Meh" << '\n';
     return 0;
 }
