@@ -1,9 +1,27 @@
 #include <iostream>
 
+namespace first
+{
+    int x = 1;
+}
+
+namespace second
+{
+    int x = 2;
+}
+
 int main()
 {
+    using namespace first;
+    using std::string;
+    using std::cout;
+
+    string hello = "hello";
+
     // Basic print line
     std::cout << "Hello World" << std::endl;
+    std::cout << x << std::endl;
+    std::cout << second::x << std::endl;
     std::cout << "Meh" << '\n';
 
     // Variables
@@ -49,11 +67,12 @@ int main()
 
     std::cout << circumference << std::endl;
 
-    do
-    {
-        std::cout << '\n'
-                  << "Press a key to continue...";
-    } while (std::cin.get() != '\n');
-
+    /*
+        do
+        {
+            std::cout << '\n'
+                      << "Press a key to continue...";
+        } while (std::cin.get() != '\n');
+    */
     return 0;
 }
