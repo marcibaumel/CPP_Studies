@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 namespace first
 {
@@ -10,13 +11,19 @@ namespace second
     int x = 2;
 }
 
+typedef std::vector<std::pair<std::string, int>> pairList_t;
+typedef std::string text;
+
+using text_g = std::string;
+
 int main()
 {
     using namespace first;
-    using std::string;
     using std::cout;
+    using std::string;
 
     string hello = "hello";
+    text_g meg= "meg";
 
     // Basic print line
     std::cout << "Hello World" << std::endl;
@@ -66,6 +73,11 @@ int main()
     double circumference = 2 * PI * RAD;
 
     std::cout << circumference << std::endl;
+    pairList_t pair;
+
+    text name2 = "Marci";
+
+    std::cout << name2 << std::endl;
 
     /*
         do
