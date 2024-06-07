@@ -43,6 +43,12 @@ int main()
     std::cout << "Hello " << name << std::endl;
     std::cout << "GPA: " << gpa << std::endl;
 
+    const double PI = 3.14159;
+    const double RAD = 10;
+    double circumference = 2 * PI * RAD;
+
+    std::cout << circumference << std::endl;
+
     do
     {
         std::cout << '\n'
