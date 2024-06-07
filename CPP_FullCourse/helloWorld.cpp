@@ -79,6 +79,19 @@ int main()
 
     std::cout << name2 << std::endl;
 
+    int students = 20;
+
+    students++;
+    students += 1;
+    students--;
+    students *= 2;
+    students /= 2;
+    float reminder = students % 9;
+
+
+    std::cout << students << std::endl;
+    std::cout << reminder << std::endl;
+
     /*
         do
         {
